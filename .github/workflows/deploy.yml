@@ -1,0 +1,23 @@
+name: Deploy 
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Testing Echo."
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: React build.
+        run:
+          npm install
+          npm test 
+          npm build 
+
