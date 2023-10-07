@@ -17,7 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-          Test Github Action deployaa
+          Test Github Action deployaaa
         </a>
       </header>
     </div>
